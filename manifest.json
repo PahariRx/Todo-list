@@ -1,22 +1,22 @@
 {
-    "name": "To-Do List & Notes",
-    "short_name": "To-Do List",
-    "description": "A simple To-Do List and Notes app with offline support.",
-    "start_url": "./",
-    "scope": "./",
-    "background_color": "#ffffff",
-    "theme_color": "#ff85a2",
-    "display": "standalone",
-    "orientation": "portrait",
-   "icons": [
+  "name": "To-Do List & Notes",
+  "short_name": "To-Do List",
+  "description": "A simple To-Do List and Notes app with offline support.",
+  "start_url": "/index.html",
+  "background_color": "#ffffff",
+  "theme_color": "#ff85a2",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
     {
-        "src": "icon-192x192.png",
-        "sizes": "192x192",
-        "type": "image/png"
+      "src": "https://paharirx.github.io/Todo-list/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-        "src": "icon-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
+      "src": "https://paharirx.github.io/Todo-list/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-]
+  ]
+}
