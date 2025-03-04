@@ -2,7 +2,7 @@
   "name": "To-Do List & Notes",
   "short_name": "To-Do List",
   "description": "A simple To-Do List and Notes app with offline support.",
-  "start_url": "/index.html",
+  "start_url": "https://paharirx.github.io/Todo-list/index.html",
   "background_color": "#ffffff",
   "theme_color": "#ff85a2",
   "display": "standalone",
