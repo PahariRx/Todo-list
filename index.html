@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List & Notes</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PWA Links -->
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker registered with scope:', reg.scope))
+                    .catch(err => console.error('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>📝 To-Do List & Notes</h1>
+        <button id="themeToggle">🌙</button>
+    </div>
+
+    <div class="container">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <select id="priority">
+            <option value="high">🔴 High</option>
+            <option value="medium">🟡 Medium</option>
+            <option value="low">🟢 Low</option>
+        </select>
+        <button onclick="addTask()">Add Task</button>
+
+        <p id="taskProgress">Completed: 0/0</p>
+
+        <ul id="taskList"></ul>
+
+        <h2>📝 Notes</h2>
+        <textarea id="notesArea" placeholder="Write a new note..."></textarea>
+        <button onclick="saveNotes()">Save Notes</button>
+        <h3>Saved Notes:</h3>
+        <ul id="savedNotesList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
