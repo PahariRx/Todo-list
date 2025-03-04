@@ -7,16 +7,18 @@
   "theme_color": "#ff85a2",
   "display": "standalone",
   "orientation": "portrait",
-  "icons": [
-    {
-      "src": "https://paharirx.github.io/Todo-list/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "https://paharirx.github.io/Todo-list/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+ {
+    "icons": [
+        {
+            "src": "https://raw.githubusercontent.com/paharirx/Todo-list/main/checkmarked.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://raw.githubusercontent.com/paharirx/Todo-list/main/checkmarked.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
+
